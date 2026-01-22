@@ -37,7 +37,7 @@ Message:
 {{message}}
 ```
 
-4. Set **"To Email"** to: `contactus@vectraxtech.com`
+4. Set **"To Email"** to: `hello@vectrax.in`
 5. Set **"From Name"** to: `{{from_name}}`
 6. Click **"Save"**
 7. **Copy the Template ID** (you'll need this later)
@@ -66,7 +66,7 @@ REACT_APP_EMAILJS_PUBLIC_KEY=your_public_key_here
 1. Run `npm start` to start your development server
 2. Fill out the contact form on your website
 3. Submit the form
-4. Check your email inbox (`contactus@vectraxtech.com`) for the submission
+4. Check your email inbox (`hello@vectrax.in`) for the submission
 
 ## Step 7: Deploy to Hostinger
 

@@ -103,12 +103,15 @@ function HomePage() {
       return;
     }
 
+    // Prepare message with email contact information appended
+    const messageWithEmail = `${contactForm.message}\n\nPlease contact this person: ${contactForm.email}`;
+
     // Prepare template parameters matching EmailJS template variables
     const templateParams = {
       name: contactForm.name,
       email: contactForm.email,
       title: contactForm.subject || 'Contact Form Submission',
-      message: contactForm.message,
+      message: messageWithEmail,
       time: new Date().toLocaleString()
     };
 
@@ -133,7 +136,7 @@ function HomePage() {
         console.error('EmailJS Error:', error);
         setContactMessage({ 
           type: 'error', 
-          text: 'Sorry, there was an error sending your message. Please try again later or email us directly at contactus@vectraxtech.com' 
+          text: 'Sorry, there was an error sending your message. Please try again later or email us directly at hello@vectrax.in' 
         });
         setContactLoading(false);
       });
@@ -334,15 +337,6 @@ function HomePage() {
               digital transformation. From enterprise applications to cloud solutions, 
               we create technology that scales with your business.
             </p>
-            <div className="cta-buttons">
-              <button className="btn btn-primary" onClick={() => scrollToSection('services')}>
-                View Our Services
-              </button>
-              <button className="btn btn-secondary" onClick={() => scrollToSection('services')}>
-                Explore Services
-              </button>
-            </div>
-          
           </div>
           <div className="home-visual">
             <div className="hero-image-container">
@@ -355,20 +349,20 @@ function HomePage() {
             </div>
             <div className="visual-cards-grid">
               <div className="visual-card card-1">
-                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=200&h=200&fit=crop&q=80" alt="Enterprise Apps" className="visual-card-image" />
-                <h4>Enterprise Apps</h4>
+                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=200&h=200&fit=crop&q=80" alt="Product Development" className="visual-card-image" />
+                <h4>Product Development</h4>
               </div>
               <div className="visual-card card-2">
-                <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=200&h=200&fit=crop&q=80" alt="Cloud Solutions" className="visual-card-image" />
-                <h4>Cloud Solutions</h4>
+                <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=200&h=200&fit=crop&q=80" alt="e-Commerce/Websites" className="visual-card-image" />
+                <h4>e-Commerce/Websites</h4>
               </div>
               <div className="visual-card card-3">
-                <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=200&h=200&fit=crop&q=80" alt="UX/UI Design" className="visual-card-image" />
-                <h4>UX/UI Design</h4>
+                <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=200&h=200&fit=crop&q=80" alt="Digital Solutions" className="visual-card-image" />
+                <h4>Digital Solutions</h4>
               </div>
               <div className="visual-card card-4">
-                <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=200&h=200&fit=crop&q=80" alt="API Engineering" className="visual-card-image" />
-                <h4>API Engineering</h4>
+                <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=200&h=200&fit=crop&q=80" alt="Internship" className="visual-card-image" />
+                <h4>Internship</h4>
               </div>
             </div>
           </div>
@@ -482,14 +476,7 @@ Telangana, India
                 <div className="info-icon">📧</div>
                 <div>
                   <h4>Email</h4>
-                  <p>contactus@vectraxtech.com<br /></p>
-                </div>
-              </div>
-              <div className="info-item">
-                <div className="info-icon">📞</div>
-                <div>
-                  <h4>Phone</h4>
-                  <p>+91 98808 77996</p>
+                  <p>hello@vectrax.in<br /></p>
                 </div>
               </div>
             </div>
@@ -559,7 +546,7 @@ Telangana, India
           <div className="footer-content">
             <div className="footer-section">
               <h3>vectraX Technologies</h3>
-              <p>Unlocking Your Digital Potential</p>
+              <p>Direction, speed, precision</p>
             </div>
             <div className="footer-section">
               <h4>Quick Links</h4>
