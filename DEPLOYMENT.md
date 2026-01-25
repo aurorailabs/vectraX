@@ -85,7 +85,7 @@ public_html/
 For future updates:
 
 1. Make your changes to the code
-2. Run: `npm run build:hostinger`
+2. Run:  `npm run build:hostinger`
 3. Upload only the changed files, or upload everything from the `build` folder to replace existing files
 4. Clear browser cache if needed
 

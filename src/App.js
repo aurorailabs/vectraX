@@ -366,6 +366,10 @@ function HomePage() {
                 <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=200&h=200&fit=crop&q=80" alt="Internship" className="visual-card-image" />
                 <h4>Internship</h4>
               </div>
+              <div className="visual-card card-5">
+                <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=200&h=200&fit=crop&q=80" alt="IT Infrastructure" className="visual-card-image" />
+                <h4>IT Infrastructure</h4>
+              </div>
             </div>
           </div>
         </div>
@@ -448,6 +452,20 @@ function HomePage() {
               <p>
                 Hands-on learning opportunities for aspiring developers. Gain real-world experience 
                 working on live projects and develop skills in modern technologies.
+              </p>
+              </div>
+            </div>
+            <div className="service-card">
+              <div className="service-image-wrapper">
+                <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=400&h=300&fit=crop&q=80" alt="IT Infrastructure" className="service-image" />
+                <div className="service-image-overlay"></div>
+              </div>
+              <div className="service-card-content">
+              <h3>IT Infrastructure</h3>
+              <p>
+                We offer comprehensive IT infrastructure services covering Core Infrastructure, Network & Security, 
+                and Office IT Setup to support reliable and secure business operations. Our solutions include system 
+                and server setup, secure networking, data protection, and end-to-end workplace IT readiness.
               </p>
               </div>
             </div>

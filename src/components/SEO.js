@@ -1,9 +1,9 @@
 import { useEffect } from 'react';
 
 const SEO = ({ 
-  title = "vectraX Technologies - Software Products & Digital Solutions | Direction, Speed, Precision",
-  description = "vectraX Technologies offers cutting-edge software products, e-commerce solutions, digital transformation services, and internship programs. Transform your business with our innovative technology solutions in Hyderabad, India.",
-  keywords = "vectraX Technologies, software development, digital solutions, e-commerce, web development, product development, software services, Hyderabad, India, technology solutions, digital transformation, internship programs, custom software, web applications",
+  title = "vectraX - Software Development & IT Infrastructure Services | vectraX Technologies",
+  description = "vectraX Technologies - Leading software development and IT infrastructure services provider. Expert software development, IT infrastructure solutions, software infrastructure, and digital transformation services. vectrax delivers cutting-edge technology solutions.",
+  keywords = "vectrax, vectraX, software development, IT infrastructure, software infrastructure, infrastructure, software development services, IT infrastructure services, vectraX Technologies, software solutions, digital solutions, technology infrastructure, software services, infrastructure services",
   image = "https://vectrax.in/vx_logo-removebg-preview.png",
   url = "https://vectrax.in/",
   type = "website"
@@ -57,10 +57,12 @@ const SEO = ({
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "vectraX Technologies",
+    "alternateName": "vectrax",
     "url": "https://vectrax.in/",
     "logo": "https://vectrax.in/vx_logo-removebg-preview.png",
-    "description": "vectraX Technologies is a forward-thinking software products and services company focused on helping businesses unlock their digital potential.",
+    "description": "vectraX Technologies (vectrax) is a leading software development and IT infrastructure services company. We provide expert software development, IT infrastructure solutions, and software infrastructure services that help businesses build scalable, secure, and efficient technology environments.",
     "slogan": "Direction, speed, precision",
+    "keywords": "vectrax, vectraX, software development, IT infrastructure, software infrastructure, infrastructure services",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "605, Block 2, My Home Krishe, TNGOs Colony",
@@ -87,8 +89,16 @@ const SEO = ({
     ],
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
-      "name": "Software Services",
+      "name": "Software Development & IT Infrastructure Services",
       "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Software Development",
+            "description": "Expert software development services from concept to launch. vectraX provides comprehensive software development solutions that enhance business performance and streamline operations."
+          }
+        },
         {
           "@type": "Offer",
           "itemOffered": {
@@ -119,6 +129,14 @@ const SEO = ({
             "@type": "Service",
             "name": "Internship Programs",
             "description": "Hands-on learning opportunities for aspiring developers. Gain real-world experience working on live projects and develop skills in modern technologies."
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "IT Infrastructure",
+            "description": "Comprehensive IT infrastructure and software infrastructure services covering Core Infrastructure, Network & Security, and Office IT Setup. vectraX provides expert IT infrastructure solutions including system and server setup, secure networking, data protection, and end-to-end workplace IT readiness."
           }
         }
       ]
