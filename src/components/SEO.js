@@ -57,12 +57,28 @@ const SEO = ({
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "vectraX Technologies",
-    "alternateName": "vectrax",
+    "alternateName": ["vectrax", "vectraX"],
+    "legalName": "vectraX Technologies",
     "url": "https://vectrax.in/",
-    "logo": "https://vectrax.in/vx_logo-removebg-preview.png",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://vectrax.in/vx_logo-removebg-preview.png",
+      "width": 500,
+      "height": 500
+    },
+    "image": "https://vectrax.in/vx_logo-removebg-preview.png",
     "description": "vectraX Technologies (vectrax) is a leading software development and IT infrastructure services company. We provide expert software development, IT infrastructure solutions, and software infrastructure services that help businesses build scalable, secure, and efficient technology environments.",
     "slogan": "Direction, speed, precision",
     "keywords": "vectrax, vectraX, software development, IT infrastructure, software infrastructure, infrastructure services",
+    "foundingLocation": {
+      "@type": "Place",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Hyderabad",
+        "addressRegion": "Telangana",
+        "addressCountry": "IN"
+      }
+    },
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "605, Block 2, My Home Krishe, TNGOs Colony",
@@ -71,14 +87,39 @@ const SEO = ({
       "postalCode": "500046",
       "addressCountry": "IN"
     },
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "telephone": "",
-      "contactType": "Customer Service",
-      "email": "hello@vectrax.in",
-      "areaServed": "IN",
-      "availableLanguage": ["English"]
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "17.4486",
+      "longitude": "78.3908"
     },
+    "contactPoint": [
+      {
+        "@type": "ContactPoint",
+        "contactType": "Customer Service",
+        "email": "hello@vectrax.in",
+        "areaServed": "IN",
+        "availableLanguage": ["English", "Hindi", "Telugu"]
+      },
+      {
+        "@type": "ContactPoint",
+        "contactType": "Sales",
+        "email": "hello@vectrax.in",
+        "areaServed": "IN"
+      }
+    ],
+    "areaServed": {
+      "@type": "Country",
+      "name": "India"
+    },
+    "knowsAbout": [
+      "Software Development",
+      "IT Infrastructure",
+      "Software Infrastructure",
+      "Digital Solutions",
+      "Product Development",
+      "E-commerce Development",
+      "Web Development"
+    ],
     "sameAs": [
       "https://facebook.com",
       "https://twitter.com",
@@ -92,54 +133,143 @@ const SEO = ({
       "name": "Software Development & IT Infrastructure Services",
       "itemListElement": [
         {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Software Development",
-            "description": "Expert software development services from concept to launch. vectraX provides comprehensive software development solutions that enhance business performance and streamline operations."
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Software Development",
+              "description": "Expert software development services from concept to launch. vectraX provides comprehensive software development solutions that enhance business performance and streamline operations.",
+              "provider": {
+                "@type": "Organization",
+                "name": "vectraX Technologies"
+              },
+              "areaServed": "IN"
+            }
           }
         },
         {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Product Development",
-            "description": "End-to-end product development from concept to launch. We build modern digital solutions that enhance business performance and streamline operations."
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Product Development",
+              "description": "End-to-end product development from concept to launch. We build modern digital solutions that enhance business performance and streamline operations.",
+              "provider": {
+                "@type": "Organization",
+                "name": "vectraX Technologies"
+              }
+            }
           }
         },
         {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "e-Commerce/Websites",
-            "description": "Custom e-commerce platforms and professional websites. Full-featured solutions with payment integration, inventory management, and responsive design."
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "e-Commerce/Websites",
+              "description": "Custom e-commerce platforms and professional websites. Full-featured solutions with payment integration, inventory management, and responsive design.",
+              "provider": {
+                "@type": "Organization",
+                "name": "vectraX Technologies"
+              }
+            }
           }
         },
         {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Digital Solutions",
-            "description": "Comprehensive digital transformation solutions. Tailored software and systems that perfectly fit your business needs and drive digital innovation."
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Digital Solutions",
+              "description": "Comprehensive digital transformation solutions. Tailored software and systems that perfectly fit your business needs and drive digital innovation.",
+              "provider": {
+                "@type": "Organization",
+                "name": "vectraX Technologies"
+              }
+            }
           }
         },
         {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Internship Programs",
-            "description": "Hands-on learning opportunities for aspiring developers. Gain real-world experience working on live projects and develop skills in modern technologies."
+          "@type": "ListItem",
+          "position": 5,
+          "item": {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Internship Programs",
+              "description": "Hands-on learning opportunities for aspiring developers. Gain real-world experience working on live projects and develop skills in modern technologies.",
+              "provider": {
+                "@type": "Organization",
+                "name": "vectraX Technologies"
+              }
+            }
           }
         },
         {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "IT Infrastructure",
-            "description": "Comprehensive IT infrastructure and software infrastructure services covering Core Infrastructure, Network & Security, and Office IT Setup. vectraX provides expert IT infrastructure solutions including system and server setup, secure networking, data protection, and end-to-end workplace IT readiness."
+          "@type": "ListItem",
+          "position": 6,
+          "item": {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "IT Infrastructure",
+              "description": "Comprehensive IT infrastructure and software infrastructure services covering Core Infrastructure, Network & Security, and Office IT Setup. vectraX provides expert IT infrastructure solutions including system and server setup, secure networking, data protection, and end-to-end workplace IT readiness.",
+              "provider": {
+                "@type": "Organization",
+                "name": "vectraX Technologies"
+              }
+            }
           }
         }
       ]
+    }
+  };
+
+  // Additional LocalBusiness schema for better location display
+  const localBusinessData = {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "vectraX Technologies",
+    "alternateName": "vectrax",
+    "image": "https://vectrax.in/vx_logo-removebg-preview.png",
+    "logo": "https://vectrax.in/vx_logo-removebg-preview.png",
+    "url": "https://vectrax.in/",
+    "description": "vectraX Technologies - Leading software development and IT infrastructure services company in Hyderabad, India.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "605, Block 2, My Home Krishe, TNGOs Colony",
+      "addressLocality": "Gachibowli",
+      "addressRegion": "Telangana",
+      "postalCode": "500046",
+      "addressCountry": "IN"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "17.4486",
+      "longitude": "78.3908"
+    },
+    "telephone": "",
+    "email": "hello@vectrax.in",
+    "priceRange": "$$",
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "opens": "09:00",
+      "closes": "18:00"
     }
   };
 
@@ -179,13 +309,16 @@ const SEO = ({
 
     addStructuredData(structuredData, 'structured-data-organization');
     addStructuredData(websiteStructuredData, 'structured-data-website');
+    addStructuredData(localBusinessData, 'structured-data-localbusiness');
     
     // Cleanup function
     return () => {
       const orgScript = document.getElementById('structured-data-organization');
       const webScript = document.getElementById('structured-data-website');
+      const localScript = document.getElementById('structured-data-localbusiness');
       if (orgScript) orgScript.remove();
       if (webScript) webScript.remove();
+      if (localScript) localScript.remove();
     };
   }, []);
 
